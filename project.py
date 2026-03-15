@@ -3,6 +3,8 @@ from commentaries import commentary
 import random
 import tabulate
 
+#core mechanism of hand cricket
+
 def main():
     print("\n")
     print("Welcome to hand cricket!")
