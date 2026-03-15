@@ -32,7 +32,6 @@ The program was inspired to be made after the recent T20 world cup.
 - `project.py`: consists of the core mechanism of the game, handling match flow, innings logic, scoreboard display and result calculation.
 - `toss.py`: implements the coin toss system to decide who bats first and who bowls first.
 - `commentaries.py`: contains randomized commentary for runs and wickets in a dictionary.
-- `test_project.py`: unit tests written with pytest.
 
 ## Design choices
 - An innings function was extracted to be reused in the second innings.
