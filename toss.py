@@ -1,6 +1,8 @@
 import random
 import time
 
+#coin toss implementation
+
 def toss():
     while True:
         print("\n")
