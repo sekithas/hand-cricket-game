@@ -1,5 +1,7 @@
 import random
 
+#dictionary containing common cricket commentaries
+
 def commentary(run):
     commentary = {
         0: [
