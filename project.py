@@ -43,14 +43,13 @@ def innings(batter, target=None):
     bowlingHistory = []
 
     if target is not None:
-        name = "You" if batter == "user" else "Computer"
         print(f"{name} need {target} runs to win!\n")
 
     while balls < 12 and wickets < 3:
         try:
             userRuns = int(input("Runs: "))
             if 0 <= userRuns <= 6:
-                computerRuns = random.choice([0,1,2,2,2,3,4,4,4,5,6,6])
+                computerRuns = random.choice([0,1,2,2,2,3,4,4,4,5,5,6,6,6,6])
 
                 balls += 1
 
@@ -60,6 +59,7 @@ def innings(batter, target=None):
                     wickets += 1
                     print(commentary("OUT"))
                     bowlingHistory.append("W")
+                    print(f"{name} has {3 - wickets} wickets remaining!")
                     continue
 
                 if batter == "user":
