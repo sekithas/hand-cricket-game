@@ -60,6 +60,12 @@ def innings(batter, target=None):
                     print(commentary("OUT"))
                     bowlingHistory.append("W")
                     print(f"{name} has {3 - wickets} wickets remaining!")
+
+                    lastThree = bowlingHistory[-3:]
+
+                    if len(lastThree) == 3 and all(x == "W" for x in lastThree):    
+                        print(commentary("HAT"))
+
                     continue
 
                 if batter == "user":
