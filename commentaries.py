@@ -36,6 +36,11 @@ def commentary(run):
         "OUT": [
             "OUT! Taken! Excellent catch!",
             "OUT! Straight through the gate!"
+        ],
+
+        "HAT": [
+            "HAT TRICK! Three in three!",
+            "HAT TRICK! The stadium has gone wild."
         ]
         }
     return random.choice(commentary[run])
